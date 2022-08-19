@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .block-1 {
+            width: 500px;
+            height: 1800px;
+            background-color: #ccc;
+            padding: 10px;
+            margin: 0 auto;
+            position: relative;
+        }
+        .box {
+            width: 200px;
+            height: 100px;
+            background-color: #fff;
+            border-width: 1px;
+            border-style: solid;
+            border-color: #000;
+        }
+        .box:nth-child(1) {
+            position: absolute;
+            left: 100px;
+            top: 0px
+        }
+
+         .box:nth-child(2) {
+            position: absolute;
+            left: 50px;
+            top: 50px
+        }
+        .box:nth-child(4) {
+            position: fixed;
+            left: 50px;
+            top: 50px
+        }
+
+    </style>
+</head>
+<body>
+    <div class="block-1">
+        <div class="box">1</div>
+        <div class="box">2</div>
+        <div class="box">3</div>
+        <div class="box">4</div>
+        <div class="box">5</div>
+    </div>
+</body>
+</html>
