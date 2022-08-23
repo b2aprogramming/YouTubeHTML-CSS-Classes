@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .block-1 {
+            background-color: #ccc;
+            padding: 10px;
+            display: flex;
+            height: 200px;
+            justify-content: center;
+            align-items: center;
+        }
+        .block-1 div {
+            background-color:darkmagenta;
+            padding: 10px;
+            border: 1px solid #000;
+        }
+
+        .block-2 {
+            background-color: #ccc;
+            padding: 10px;
+            display: flex;
+            width: 500px;
+            flex-wrap: wrap;
+        }
+        .block-2 div {
+            background-color:cornflowerblue;
+            padding: 10px;
+            border: 1px solid #000;
+        }
+
+
+        .block-3 {
+            background-color: darkolivegreen;
+            padding: 10px;
+            display: flex;
+            width: 500px;
+            height: 500px;
+           flex-direction: column;
+           align-items: center;
+           justify-content: center;
+        }
+        .block-3 div {
+            background-color:aqua;
+            padding: 10px;
+            border: 1px solid #000;
+        }
+
+        .block-4 {
+            background-color: dodgerblue;
+            padding: 10px;
+            display: flex;
+            width: 500px;
+           
+        }
+        .block-4 div {
+            background-color:darkkhaki;
+            padding: 10px;
+            border: 1px solid #000;
+            flex-grow: 2;
+        }
+        .block-4 div:nth-child(2) {
+            flex-grow: 4;
+        }
+
+
+        .block-5 {
+            background-color: dodgerblue;
+            padding: 10px;
+            display: flex;
+            width: 500px;
+           
+        }
+        .block-5 div {
+            background-color:darkkhaki;
+            padding: 10px;
+            border: 1px solid #000;
+        }
+        .block-5 div:nth-child(1) {
+            flex-basis: 100px;
+        }
+        .block-5 div:nth-child(2) {
+            flex-basis: 100%;
+        }
+        .block-5 div:nth-child(3) {
+            flex-basis: 100px;
+        }
+
+        .block-6 {
+            background-color: dodgerblue;
+            padding: 10px;
+            display: flex;
+            width: 500px;
+            flex-wrap: wrap;
+            box-sizing: border-box;
+        }
+        .block-6 div {
+            box-sizing: border-box;
+            background-color:darkkhaki;
+            padding: 10px;
+            border: 1px solid #000;
+            flex: 1 0 25%;
+           
+        }
+
+        .block-7 {
+            background-color: dodgerblue;
+            padding: 10px;
+            display: flex;
+            width: 500px;
+           
+        }
+        .block-7 div {
+            box-sizing: border-box;
+            background-color:darkkhaki;
+            padding: 10px;
+            border: 1px solid #000;
+           
+        }
+
+         .block-7 div:nth-child(1) {
+            order: 4
+         }
+         .block-7 div:nth-child(2) {
+            order: 3
+         }
+         .block-7 div:nth-child(3) {
+            order: 2
+         }
+         .block-7 div:nth-child(4) {
+            order: 1
+         }
+       
+    </style>
+</head>
+<body>
+    <div class="block-1">
+        <div>box- 1</div>
+        <div>box- 2</div>
+        <div>box- 3 asg sag sag sag sag sag sag sag sag sag sag sag sag sag sag sag sag sa sag sag sag as gasg sag sag sag sag sag sag sag sag sag sag sag sag sadg sag sag sa</div>
+        <div>box- 4</div>
+        <div>box- 5</div>
+        <div>box- 6</div>
+        <div>box- 7</div>
+    </div>
+    <div class="block-2">
+        <div>Box 1</div>
+        <div>Box 1</div>
+        <div>Box 1</div>
+        <div>Box 1</div>
+        <div>Box 1</div>
+        <div>Box 1</div>
+        <div>Box 1</div>
+        <div>Box 1</div>
+        <div>Box 1</div>
+        <div>Box 1</div>
+        <div>Box 1</div>
+        <div>Box 1</div>
+        <div>Box 1</div>
+        <div>Box 1</div>
+        <div>Box 1</div>
+        <div>Box 1</div>
+        <div>Box 1</div>
+        <div>Box 1</div>
+        <div>Box 1</div>
+        <div>Box 1</div>
+        <div>Box 1</div>
+        <div>Box 1</div>
+        <div>Box 1</div>
+        <div>Box 1</div>
+        <div>Box 1</div>
+    </div>
+    <div class="block-3">
+        <div>Box 1</div>
+        <div>Box 1</div>
+        <div>Box 1</div>
+        <div>Box 1</div>
+      
+    </div>
+
+    <div class="block-4">
+        <div>Box 1</div>
+        <div>Box 2</div>
+        <div>Box 3</div>
+        <div>Box 4</div>
+    </div>
+
+
+    <div class="block-5">
+        <div>Box 1</div>
+        <div>Box 2</div>
+        <div>Box 2</div>
+        
+    </div>
+
+
+    <div class="block-6">
+        <div>Box 1</div>
+        <div>Box 2</div>
+        <div>Box 2</div>
+        <div>Box 2</div>
+        <div>Box 2</div>
+        <div>Box 2</div>
+        <div>Box 2</div>
+        <div>Box 2</div>
+    </div>
+
+    <div class="block-7">
+        <div>Box 1</div>
+        <div>Box 2</div>
+        <div>Box 3</div>
+        <div>Box 4</div>
+        
+    </div>
+</body>
+</html>
