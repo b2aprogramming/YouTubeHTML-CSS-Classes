@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #box-1 {
+            
+            height: 200px;
+            background-color: red;
+            animation: divAnimate 5s infinite;
+            
+        }
+        #box-2 {
+            
+            height: 100px;
+            width: 100px;
+            background-color: red;
+            animation: divAnimate2 5s infinite;
+            position: relative;
+            
+        }
+        #box-3 {
+            
+            height: 100px;
+            width: 100px;
+            background-color: green;
+            position: relative;
+            transform: scale(auto);
+            transition: transform  500ms ease-in-out;
+        }
+        #box-3  div{
+            height: 50px;
+            width: 50px;
+            position: absolute;
+            left: 0px;
+            top: 0px;
+            background-color: red;
+            opacity: 0;
+            transition: all 500ms ease-in-out;
+        }
+        #box-3:hover div {
+            opacity: 1;
+            left: 50px;
+        }
+        #box-3:hover {
+            transform: scale(2);
+        }
+        @keyframes divAnimate {
+            25% {
+                opacity: 0;
+            }
+            50% {
+                opacity: 0.25;
+            }
+            75% {
+                opacity: 0.5;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+
+        @keyframes divAnimate2 {
+            0% {
+                top: 0px;
+                left: 0px;
+            }
+            25% {
+                top: 0px;
+                left: 400px;
+            }
+            50% {
+                top: 300px;
+                left: 400px;
+            }
+            75% {
+                top: 300px;
+                left: 0px;
+            }
+            100% {
+                top: 0px;
+                left: 0px;
+            }
+        }
+        .box-4 {
+            width: 200px;
+            height: 200px;
+            border: 10px solid #000;
+            padding: 20px;
+            margin:  40px;
+        }
+    </style>
+</head>
+<body>
+    <button>
+        Animate div
+    </button>
+    <div id="box-1">
+        some text here
+    </div>
+
+    <!-- <div id="box-2">
+        some text here
+    </div> -->
+
+    <div id="box-3">
+        <!-- <div>
+            hi
+        </div> -->
+    </div>
+
+    <div class="box-4">
+
+    </div>
+</body>
+</html>
