@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        body {
+            padding: 15px;
+        }
+        .title-1 {
+            font-size: 30px;
+            font-weight: bold;
+        }
+        hr {
+            border-bottom: 2px solid #000;
+            margin: 30px 0;
+        }
+        .card {
+            width: 100%;
+            max-width: 400px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+        }
+        .card-header {
+            min-height: 20px;
+            padding: 5px 15px;
+            background-color: #c2d7e6;
+            border-radius: 10px 10px 0 0;
+        }
+        .card-footer {
+            border-top: 1px solid #ccc;
+            padding: 5px 15px;
+           
+        }
+        .card-body {
+            padding: 15px;
+        }
+        .block-1 {
+            width: 400px;
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .block-1 aside{
+            flex: 1 0 50%;
+            border: 1px solid #cccc;
+            padding: 10px;
+        }
+        .block-1 .left-block {
+            
+        }
+    </style>
+</head>
+<body>
+    <!-- Title / header tags  -->
+    <!-- HTML5 TAGS LIST: https://www.tutorialrepublic.com/html-reference/html5-tags.php -->
+    <div>
+        <h1 class="title-1">Tags List</h1>
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem <strong>Ipsum</strong> </p>
+    </div>
+    <hr>
+    <div class="card">
+        <header class="card-header">
+            <h3>Card Title</h3>
+        </header>
+        <section class="card-body">
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also</p>
+        </section>
+        <footer class="card-footer">
+            Footer
+        </footer>
+    </div>
+    <hr>
+    <div class="block-1">
+        <aside class="left-block">
+            left block
+        </aside>
+        <aside class="right-block">
+            right block
+        </aside>
+        <aside class="right-block">
+            right block
+        </aside>
+        <aside class="right-block">
+            right block
+        </aside>
+    </div>
+    <hr>
+
+    <div class="block-2">
+        <figure>
+            <img src="images/img-1.jpg">
+            <figcaption>This is flower</figcaption>
+        </figure>
+    </div>
+    <hr>
+    <div class="block-2">
+        <picture>
+            <source media="(min-width:650px)" srcset="images/img-1.jpg">
+            <source media="(min-width:460px)" srcset="images/img-2.jpg">
+            <img src="images/img-3.jpeg" alt="Flowers" style="width:auto;">
+          </picture>
+    </div>
+    <hr>
+    <div class="block-2">
+        <audio controls autoplay="autoplay">
+            <source src="audio-videos/audio1.mp3" type="audio/mp3">
+            Your browser does not support the audio element.
+        </audio>
+    </div>
+    <hr>
+    <div class="block-2">
+        <video controls>
+            <source src="audio-videos/sample-4.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+    </div>
+    <hr>
+</body>
+</html>
