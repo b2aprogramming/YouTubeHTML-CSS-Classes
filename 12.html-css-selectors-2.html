@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        [class] {
+            color: red;
+        }
+        /* h1[class] {
+            color: green;
+        } */
+        #hh1[class] {
+            color: green;
+        }
+        /* h3[title] {
+            background-color: chocolate;
+        } */
+
+        h3[title="I am title h3-1"] {
+            background-color: chocolate;
+        }
+        [title ~= "block2"] {
+            background-color: aqua;
+        }
+        [title |= "ab"] {
+            background-color: darkmagenta;
+        }
+        [title ^= "I am"] {
+           color: blue;
+        }
+        [title $= ".pdf"] {
+           color: cyan;
+        }
+        [title $= ".word"] {
+           color: rgb(161, 18, 90);
+        }
+        [title *= "tle"] {
+           color: rgb(18, 223, 15);
+        }
+    </style>
+</head>
+<body>
+    <div class="box-1">
+        some text here
+    </div>
+    <h1 class="title11">Hello title</h1>
+    <h1 id="hh1" class="title11">Hello title</h1>
+    <h3 title="I am title h3-1">Hello title h3</h3>
+    <h3 title="I am title h3-2">Hello title h3</h3>
+
+    <div title="block1 div">
+        some text here 1
+    </div>
+    <div title="block2 div">
+        some text here 2
+    </div>
+    <div title="ab-block3 div">
+        some text here 1
+    </div>
+    <div title="ab-block4 div">
+        some text here 2
+    </div>
+    <div title="b-block4 div">
+        some text here 2
+    </div>
+
+    <h1 title="ab I am here">TITLE 2</h1>
+    <h1 title="I am here">TITLE 3</h1>
+    <h1 title="I'am here">TITLE 4</h1>
+    <h2 title="https://www.google.com/files/my-page.pdf">TITLE pdf</h2>
+    <h2 title="https://www.google.com/files/my-page.word">TITLE word</h2>
+    <h2 title="https://www.google.com/files/my-page.doc">TITLE doc</h2>
+    <h3 title="I am title 3 here">TITLE doc</h3>
+    <h3 title="I am titl 3 here">TITLE doc</h3>
+</body>
+</html>
