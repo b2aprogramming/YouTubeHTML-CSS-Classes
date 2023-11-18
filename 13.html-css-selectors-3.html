@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selectos</title>
+    <style>
+        a:link {
+            color: cyan;
+        }
+        .link1:focus {
+            color: blue;
+            background-color: rgb(233, 10, 10);
+            border: 5px solid #000;
+        }
+        .link1:active {
+            color: blue;
+            background-color: rgb(233, 10, 214);
+        }
+        .link1:visited {
+            color: #309b06;
+            /* text-decoration: none;
+            font-family: 'Courier New', Courier, monospace; */
+        }
+        h3:active {
+            background-color: red;
+        }
+        h3:focus {
+            background-color: blue;
+        }
+        .block {
+            margin-bottom: 20px;
+        }
+        .block-2 h1:empty {
+            background-color: red;
+            padding: 10px;
+        }
+        .block-3 h1:first-child {
+            color: red;
+        }
+        .block-3 h1:last-child {
+            color: blue;
+        }
+        .block-4 h1::first-letter {
+            font-size: 80px;
+            color: blue;
+            background-color: red;
+            border-radius: 10px;
+            padding: 0 15px;
+        }
+        .block-4 h2::first-line {
+            color: black;
+            font-size: 40px;
+            background-color: red;
+        }
+        .block-5 p:first-of-type {
+            color: red;
+            background-color: #309b06;
+        }
+        .block-6 .hb:first-child {
+            color: red;
+        }
+        .block-7 ul {
+            list-style-type: lower-alpha;
+        }
+        .block-7 ::marker {
+           color: red;
+           font-size: 30px;
+        }
+        
+        .block-8 ul li {
+            font-size: 30px;
+            padding: 10px;
+        }
+        /* .block-8 ul li:not(:first-child) {
+            color: blue;
+        } */
+        /* .block-8 ul li:not(:empty) {
+            color: red;
+        } */
+        .block-9 ul li {
+            font-size: 30px;
+        }
+        .block-9 ul li:not(:nth-child(3)) {
+            color: red;
+        }
+        /* .block-9 ul li:nth-child(1) {
+            color: blue;
+        }
+         .block-9 ul li:nth-child(2) {
+            color: blue;
+        }
+        .block-9 ul li:nth-child(3) {
+            color: green;
+        }
+        .block-9 ul li:nth-child(4) {
+            color: cyan;
+        } */
+        .block-10 ul li:nth-child(odd) {
+            color: red;
+            font-size: 30px;
+        }
+        .block-10 ul li:nth-child(even) {
+            color: green;
+            font-size: 30px;
+        }
+        .block-11 ul li:nth-child(5n + 1){
+            color: red;
+            font-size: 30px;
+        }
+        .block-12 ul li:nth-last-child(2n + 1){
+            color: blue;
+            font-size: 30px;
+        }
+        /* :rott is HTML Element */
+        /* :root { 
+            background-color: red;
+        } */
+        ::selection{
+            background-color: darkkhaki;
+        }
+        .block-12 ::selection{
+            background-color: chartreuse;
+            color: cyan;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="block block-1">
+        <h2>
+            <a href="#" class="link1" tabindex="3">I am link</a>
+        </h2>
+        <h2>
+            <a href="link-2.html" tabindex="2" class="link1">I am link2</a>
+        </h2>
+        <h2>
+            <a href="link-1.html" tabindex="2" class="link1">I am link 3</a>
+        </h2>
+        <div>
+            <h3 tabindex="1">I am title</h3>
+        </div>
+    </div>
+    <div class="block block-2">
+        <h1>asgsa</h1>
+        <h1></h1>
+    </div>
+    <div class="block block-3">
+        <h1>title 1</h1>
+        <h1>title 2 </h1>
+        <h1>title 3 </h1>
+        <h1>title 4 </h1>
+    </div>
+
+    <div class="block block-4">
+        <h1>Main title 1</h1>
+        <h2>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum</h2>
+    </div>
+    <div class="block block-5">
+        <h3>some test</h3>
+        <p>The first paragraph.</p>
+        <h3>some test</h3>
+        <p>The second paragraph.</p>
+        <p>The third paragraph.</p>
+        <p>The fourth paragraph.</p>
+    </div>
+
+    <div class="block block-6">
+        <!-- <p class="ddd">sagsg</p> -->
+        <h1 class="hb">title 1</h1>
+        <h2 class="hb">title 2 </h2>
+        <h3 class="hb">title 3 </h3>
+        <h4 class="hb">title 4 </h4>
+    </div>
+
+    <div class="block block-7">
+        <ul>
+            <li>list text</li>
+            <li>list text</li>
+            <li>list text</li>
+            <li>list text</li>
+            <li>list text</li>
+        </ul>
+        <h1>Hi title 1</h1>
+    </div>
+
+    <div class="block block-8">
+        <ul>
+            <li>list text</li>
+            <li>list text</li>
+            <li>list text</li>
+            <li>list text</li>
+            <li>list text</li>
+        </ul>
+    </div>
+
+    <div class="block block-9">
+        <ul>
+            <li>list text</li>
+            <li>list text</li>
+            <li>list text</li>
+            <li>list text</li>
+            <li>list text</li>
+        </ul>
+    </div>
+    <div class="block block-10">
+        <ul>
+            <li>list text</li>
+            <li>list text</li>
+            <li>list text</li>
+            <li>list text</li>
+            <li>list text</li>
+        </ul>
+    </div>
+    <div class="block block-11">
+        <ul>
+            <li>list text</li>
+            <li>list text</li>
+            <li>list text</li>
+            <li>list text</li>
+            <li>list text</li>
+            <li>list text</li>
+            <li>list text</li>
+            <li>list text</li>
+            <li>list text</li>
+            <li>list text</li>
+            <li>list text</li>
+            <li>list text</li>
+            <li>list text</li>
+        </ul>
+    </div>
+    <div class="block block-12">
+        <ul>
+            <li>list text</li>
+            <li>list text</li>
+            <li>list text</li>
+            <li>list text</li>
+            <li>list text</li>
+            <li>list text</li>
+            <li>list text</li>
+            <li>list text</li>
+            <li>list text</li>
+            <li>list text</li>
+            <li>list text</li>
+            <li>list text</li>
+            <li>list text</li>
+        </ul>
+    </div>
+</body>
+</html>
