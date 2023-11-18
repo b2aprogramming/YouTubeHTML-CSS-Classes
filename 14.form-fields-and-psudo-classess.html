@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0px;
+            margin: 0px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        .container{
+            max-width: 1000px;
+            margin:  0 auto;
+        }
+        .form-block {
+            max-width: 500px;
+            border: 1px solid #555555;
+            padding: 20px;
+            border-radius: 10px;
+        }
+        .form-field {
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+        }
+        .form-field label {
+            min-width: 150px ;
+            user-select: none;
+        }
+        .form-field input:not(input[type="radio"]){
+            min-height: 26px;
+            padding: 4px 10px;
+            border-radius: 6px;
+            border: 2px solid #555555;
+            outline: none;
+            font-size: 16px;
+            /* width: 100%; */
+        }
+        .form-field input:focus{
+            border-color:rgb(58, 105, 205);
+        }
+        .form-field input:disabled{
+            border-color:rgb(161, 162, 163);
+            background-color: #e6e0e0;
+            color: #ccc;
+        }
+        .form-field input:checked + span{
+            color: red;
+        }
+        .block-1 {
+            user-select: none;
+        }
+        .form-field input:invalid{
+            border: 2px solid red;
+        }
+        .form-field input:required{
+            color: blue;
+        }
+        .form-field input[type="range"] {
+            padding: 0px !important;
+        }
+
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+        <div class="form-block">
+            <form>
+                <div class="form-field">
+                    <label>First Name: </label>
+                    <input type="text" readonly minlength="5" value="Bhagath" maxlength="10" placeholder="Type your first name" size="30">
+                </div>
+                <div class="form-field">
+                    <label>First Name 2: </label>
+                    <input type="text" minlength="5" value="Singh"  maxlength="10" placeholder="Type your first name" size="30" disabled>
+                </div>
+
+                <div class="form-field">
+                    <label>Last name: </label>
+                    <input type="text" required  size="30">
+                </div>
+                <!-- <div class="form-field">
+                    <label>Last name: </label>
+                    <input type="text" required  size="30" autofocus>
+                </div> -->
+                <div class="form-field">
+                    <label>Phone nom: </label>
+                    <input type="text" placeholder="Phone: +91 (7896) 484 4586" size="30">
+                </div>
+                <div class="form-field">
+                    <label>Age: </label>
+                    <input type="number" min="4" max="10" size="100">
+                </div>
+                <div class="form-field">
+                    <label>Courses: </label>
+                    <div>
+                        <div>
+                            <input type="checkbox" id="html" checked value="html"> <label for="html">HTML</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" checked value="css"> <span>CSS</span>
+                        </div>
+                        <div>
+                            <input type="checkbox" checked value="js"> <span>Javascript</span>
+                        </div>
+                        <div>
+                            <input type="checkbox"  value="xml"> <span>XML</span>
+                        </div>
+                        <div>
+                            <input type="checkbox"  value="java"> <span>JAVA</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-field">
+                    <label>Gender: </label>
+                    <div>
+                       <input type="radio" name="gen" value="m" id="male"> <label for="male">Male</label>
+                       <input type="radio" name="gen" value="f" id="fmale"> <label for="fmale">Female</label>
+                    </div>
+                </div>
+                <div class="form-field">
+                    <label>Color: </label>
+                    <input type="color">
+                </div>
+                <div class="form-field">
+                    <label>Date: </label>
+                    <input type="date">
+                </div>
+                
+                <div class="form-field">
+                    <label>Datetime-local: </label>
+                    <input type="datetime-local">
+                </div>
+
+                <div class="form-field">
+                    <label>Email: </label>
+                    <input type="email">
+                </div>
+                <div class="form-field">
+                    <label>File: </label>
+                    <input type="file" multiple>
+                </div>
+               
+                <div class="form-field">
+                    <label>hidden: </label>
+                    <input type="hidden" value="25685">
+                </div>
+                
+                <div class="form-field">
+                    <label>Image: </label>
+                    <input type="image" src="images/img-1.jpg" width="200">
+                </div>
+
+                <div class="form-field">
+                    <label>Month: </label>
+                    <input type="month">
+                </div>
+                
+                <div class="form-field">
+                    <label>Password: </label>
+                    <input type="password" value="bhagath">
+                </div>
+                <div class="form-field">
+                    <label>Range: </label>
+                    <input type="range" value="20">
+                </div>
+                <div class="form-field">
+                    <label>Tel: </label>
+                    <input type="tel">
+                </div>
+
+                <div class="form-field">
+                    <input type="submit" value="Submit">
+                </div>
+
+                <div class="form-field">
+                    <input type="reset" value="RESET">
+                </div>
+            </form>
+        </div>
+        <div class="block-1">
+            <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p>
+        </div>
+    </div>
+</body>
+</html>
