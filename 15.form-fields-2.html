@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0px;
+            margin: 0px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        .container{
+            max-width: 1000px;
+            margin:  0 auto;
+        }
+        .form-block {
+            max-width: 500px;
+            border: 1px solid #555555;
+            padding: 20px;
+            border-radius: 10px;
+        }
+        .form-field {
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+        }
+        .form-field label {
+            min-width: 150px ;
+            user-select: none;
+        }
+        textarea {
+            border: 1px solid #555555;
+            border-radius: 10px;
+            outline: none;
+            font-size: 16px;
+            padding: 15px;
+            /* height: 200px; */
+        }
+        select {
+            border: 1px solid #555555;
+            border-radius: 10px;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="form-block">
+            <form action="test-form.html">
+                <div class="form-field">
+                    <label>Address: </label>
+                    <textarea maxlength="20" required rows="5" cols="100" autofocus placeholder="Address bar">Hiu test</textarea>
+                </div>
+                <div class="form-field">
+                    <label>Test: </label>
+                    <input type="text" value="test text">
+                </div>
+
+                <div class="form-field">
+                    <label>Selct single: </label>
+                    <select>
+                        <option value="">Select Option</option>
+                        <option value="html">HTML</option>
+                        <option value="css">CSS</option>
+                        <option value="java">JAVA</option>
+                        <option value="js">JS</option>
+                    </select>
+                </div>
+                <div class="form-field">
+                    <label>Select multiple: </label>
+                    <select multiple>
+                        <option value="">Select Option</option>
+                        <option value="html">HTML</option>
+                        <option value="css">CSS</option>
+                        <option value="java">JAVA</option>
+                        <option value="js">JS</option>
+                    </select>
+                </div>
+                <div class="form-field">
+                    <label for="optgrp">Select Groupbox: </label>
+                    <select id="optgrp">
+                        <option value="">Select Option</option>
+                        <optgroup label="UI">
+                            <option value="html">HTML</option>
+                            <option value="css">CSS</option>
+                            <option value="js">JS</option>
+                        </optgroup>
+                        <optgroup label="Backend">
+                            <option value="html">JAVA</option>
+                            <option value="css">.Net</option>
+                            <option value="js">PHP</option>
+                        </optgroup>
+                        
+                    </select>
+                </div>
+                <!-- <div>
+
+                    <input type="range" id="a" value="50">
+
+                    +<input type="number" id="b" value="25">
+                    
+                    =<output name="x" for="a b"></output>
+                </div> -->
+
+                <div class="form-field">
+                    <!-- <input type="submit" value="Submit"> -->
+                    <button type="submit">Submit</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
