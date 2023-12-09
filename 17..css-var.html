@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        :root {
+           --round-corner-10: 10px; 
+           --border-color: #ccc;
+           --rgb-color: 222, 227, 242;
+        }
+        * {
+            padding: 0px;
+            margin: 0px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .container {
+            margin: 0 auto;
+            max-width: 1000px;
+        }
+        .card {
+            --card-bg: red;
+            width: 300px;
+            height: 300px;
+            border: 1px solid var(--border-color);
+            /* border-radius: 10px; */ 
+            border-radius: var(--round-corner-10); 
+            /* background-color: rgba(var(--rgb-color), 0.5); */
+            background-color: var(--card-bg);
+            
+        }
+        .card h2{
+            color: var(--card-bg);
+        }
+        .card2 h2::before{
+            color: var(--card-bg);
+            content: "\267F";
+        }
+        .card3 {
+            width: 200px;
+            background-color: #fff;
+            height: 200px;
+            box-shadow: 6px 6px 8px rgba(0,0,0,0.5);
+            border: 1px solid #ccc;
+            -ms-border-radius: 10px;
+            -webkit-border-radius: 10px;
+            -moz-border-radius: 10px;
+            -o-border-radius: 10px;
+             border-radius: 10px;
+        }
+        /* img {
+            -webkit-box-reflect: below;
+        } */
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <h2>TEST HERE</h2>
+        </div>
+        <div class="card2">
+            <h2>TEST HERE</h2>
+        </div>
+        <div class="card3">
+            <!-- <img src="images/workplace.jpg"> -->
+        </div>
+    </div>
+</body>
+</html>

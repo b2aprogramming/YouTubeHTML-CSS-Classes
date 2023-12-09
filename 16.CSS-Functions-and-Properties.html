@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        .box1::after {
+            content: ""attr(title)"";
+        }
+        .box2 {
+            width: 70%;
+            height: 200px;
+            border: 10px solid #000;
+            margin-bottom: 5px;
+        }
+        .box2-h {
+            padding: 20px;
+            /* width: calc(70% - 40px);
+            height: calc(200px - 40px); */
+        }
+        ul {
+            list-style-type: decimal;
+        }
+        .box3 {
+            padding: 20px;
+        }
+        .box3 h4 {
+                display: list-item;
+                list-style-type: decimal;
+        }
+        .box4{
+                counter-reset: test;
+        }
+        .box4 h4::before {
+            counter-increment: test;
+            content: ""counter(test)": ";
+        }
+        .box5 {
+            width: 300px;
+            height: 300px;
+            /* background-color: rgb(53, 198, 224); */
+            background-color: hsla(100, 79%, 48%, 1);
+        }
+        .box6 {
+           height: 200px;
+           width: max(300px, 100px);
+           background-color: red;
+        }
+        .box7 {
+           height: 200px;
+           width: min(300px, 100px);
+           background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <div class="box1" title="TEST TITLE">Some text</div>
+    <div class="box2" title="TEST TITLE">Some text</div>
+    <div class="box2 box2-h" title="TEST TITLE">Some text</div>
+    <div class="box3">
+        <ul>
+            <li>Test list data</li>
+            <li>Test list data</li>
+            <li>Test list data</li>
+            <li>Test list data</li>
+            <li>Test list data</li>
+            <li>Test list data</li>
+        </ul>
+        <h4>title 4 example</h4>
+        <h4>title 4 example</h4>
+        <h4>title 4 example</h4>
+        <h4>title 4 example</h4>
+        <h4>title 4 example</h4>
+        <h4>title 4 example</h4>
+    </div>
+    <div class="box4">
+        <h4>title 4 example</h4>
+        <h4>title 4 example</h4>
+        <h4>title 4 example</h4>
+        <h4>title 4 example</h4>
+        <h4>title 4 example</h4>
+        <h4>title 4 example</h4>
+    </div>
+    <div class="box5">
+        
+    </div>
+    <div class="box6">
+        
+    </div>
+    <div class="box7">
+        
+    </div>
+</body>
+</html>
