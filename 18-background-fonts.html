@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .flower-bg {
+            width: 500px;
+            height: 500px;
+            border: 5px dashed #000;
+            background-image: url("images/flower.png");
+        }
+        .bg-1 {
+            background-repeat: no-repeat;
+            background-position: 100px 50px;
+            height: 300px;
+        }
+        h2 {
+            color: red;
+            background-color: #000;
+        }
+        .bg-2 {
+            background-repeat: repeat-y;
+            background-position: 200px 20px;
+        }
+        .bg-3 {
+            background: red no-repeat  url("images/flower.png") center center;
+        }
+        .bg-4 {
+            background-image: url("images/flower.png"), url("images/flower2.png");
+            background-repeat: no-repeat, repeat-x;
+            background-position: right bottom, top right;
+        }
+    </style>
+</head>
+<body>
+    <h1>Backgrounds</h1>
+    <div class="bg-1 flower-bg">
+        <h2>BG 1</h2>
+    </div>
+    <div class="bg-2 flower-bg">
+        <h2>BG 2</h2>
+    </div>
+    <div class="bg-3 flower-bg">
+        <h2>BG 3</h2>
+    </div>
+
+    <div class="bg-4 flower-bg">
+        <h2>BG 3</h2>
+    </div>
+</body>
+</html>
